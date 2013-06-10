@@ -1,0 +1,5 @@
+!pd = |> pandoc -f html -w mediawiki -R -s -S -o %o %f |> %B.mediawiki
+
+: foreach *.zip     |> unzip %f            |> %B.html {html}
+: foreach {html}    |> python inline.py %f |> %B.inlined {inlined}
+: foreach {inlined} |> !pd                 |>
