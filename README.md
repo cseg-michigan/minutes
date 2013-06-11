@@ -7,15 +7,19 @@ Dependencies
 ------------
 
 - [Tup](https://github.com/gittup/tup)
-- [Pynliner](https://github.com/rennat/pynliner)
 - [Pandoc](https://github.com/jgm/pandoc)
+- Libre Office
+
+    sudo apt-get install python-uno
 
 
 Usage
 -----
 
+Download .docx files.
+
     tup init
-    tup upd
+    sudo tup upd
 
 Wiki
 ----
